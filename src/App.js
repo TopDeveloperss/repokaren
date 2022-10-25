@@ -9,6 +9,7 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import { Fragment } from 'react'; 
 import VentasAdmin from './components/listaUsuarios/ventasAdmin.js';
+import Carrito from './components/listaUsuarios/Carrito.js'
 
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
         <Nav.Link href="/lista">LISTA</Nav.Link>
       </Nav.Item>
       <Nav.Item>
+        <Nav.Link href="/Carrito">Carro de compras</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
         <Nav.Link eventKey="disabled" disabled>
           Roles
         </Nav.Link>
@@ -41,6 +45,8 @@ function App() {
           <Route path='/home' element={Autorizacion(Home, ["USER", "ADMIN"])}/>
           <Route path='/ventas' element={Autorizacion(VentasAdmin, ["USER", "ADMIN"])}/>
           <Route path='/lista' element={Autorizacion(ListaProductos, ["USER", "ADMIN"])}/>
+          <Route path= "/Carrito" element= {Autorizacion(Carrito, ["USER"])}/>
+          
         </Routes>
       </BrowserRouter>
     </>
