@@ -37,7 +37,7 @@ function App() {
         <Nav.Link href="/ventas">Ventas</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="/ver">Productos</Nav.Link>
+        <Nav.Link href="/modificarproducto">Productos</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link href="/listaP">Lista Productos</Nav.Link>
@@ -60,16 +60,16 @@ function App() {
     </Nav>
    
         <Routes>
-          <Route path='/ver' element={Autorizacion(ModificarProducts, ["USER", "ADMIN"])}/>
+          <Route path='/modificarproducto' element={Autorizacion(ModificarProducts, ["USER", "ADMIN"])}/>
           <Route path='/home' element={Autorizacion(Home, ["USER", "ADMIN"])}/>
           <Route path='/ventas' element={Autorizacion(VentasAdmin, ["USER", "ADMIN"])}/>
-          <Route path='/lista' element={Autorizacion(ProductoCliente, ["USER", "ADMIN"])}/>
-          <Route path='/lista' element={Autorizacion(ListaProductos, ["USER", "ADMIN"])}/>          
+          <Route path='/clienteproducto' element={Autorizacion(ProductoCliente, ["USER", "ADMIN"])}/>
+          <Route path='/listaP' element={Autorizacion(ListaProductos, ["USER", "ADMIN"])}/>          
           <Route path='/carrito' element={Autorizacion(Carrito, ["USER", "ADMIN"])}/>
 
         </Routes>
-        <Pagination/>
-        <Footer/>
+          <Pagination/>
+          <Footer/>
       </BrowserRouter>
     </>
   );
