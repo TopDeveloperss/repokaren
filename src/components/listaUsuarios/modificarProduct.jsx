@@ -47,7 +47,7 @@ const  ModificarProducts = () =>
       }
 
       return (
-        <div>
+        <React.Fragment>
           <Form onSubmit = { 
             (e) => {
               addProduct(e)
@@ -66,33 +66,7 @@ const  ModificarProducts = () =>
                   </tr>
                 </thead>
                 <tbody>
-                  {
-                    datosProducto.map(
-                      (producto, index) => { 
-                        return(
-                          <tr>
-                            <td>{index}</td>
-                            <td>{producto.nombre}</td>
-                            <td>{producto.descripcion}</td>
-                            <td>{producto.precio}</td>
-                            <td>{producto.stock}</td>
-                            <td><Button variant="outline-danger" onClick= { 
-                              ()  =>  {
-                                eliminarProducto(producto.id)
-                              }
-                              } >Eliminar</Button></td>
-                          <td><Button variant="outline-warning" onClick= { 
-                              ()  =>  {
-                                //editarProducto(producto.id)
-                              }
-                              } >Editar</Button></td>
-                          </tr>
-                        );
-                      }
-                    )
-                  }
-                  
-                  <tr>
+                <tr>
                       <td></td>
                       <td>
                         <InputGroup className="mb-3">
@@ -167,16 +141,43 @@ const  ModificarProducts = () =>
                         </Button>
                       </td>
                   </tr>
+                  {
+                    datosProducto.map(
+                      (producto, index) => { 
+                        return(
+                          <tr>
+                            <td>{index}</td>
+                            <td>{producto.nombre}</td>
+                            <td>{producto.descripcion}</td>
+                            <td>{producto.precio}</td>
+                            <td>{producto.stock}</td>
+                            <td><Button variant="outline-danger" onClick= { 
+                              ()  =>  {
+                                eliminarProducto(producto.id)
+                              }
+                              } >Eliminar</Button></td>
+                          <td><Button variant="outline-warning" onClick= { 
+                              ()  =>  {
+                                //editarProducto(producto.id)
+                              }
+                              } >Editar</Button></td>
+                          </tr>
+                        );
+                      }
+                    )
+                  }
+                  
+                  
                 </tbody>
                 <Pagination>
                   <Pagination.First />
                   <Pagination.Prev />
-                  <Pagination.Item>{1}</Pagination.Item>
+                  <Pagination.Item active>{1}</Pagination.Item>
                   <Pagination.Ellipsis />
 
                   <Pagination.Item>{10}</Pagination.Item>
                   <Pagination.Item>{11}</Pagination.Item>
-                  <Pagination.Item active>{12}</Pagination.Item>
+                  <Pagination.Item >{12}</Pagination.Item>
                   <Pagination.Item>{13}</Pagination.Item>
                   <Pagination.Item disabled>{14}</Pagination.Item>
 
@@ -187,7 +188,7 @@ const  ModificarProducts = () =>
                 </Pagination>
             </ Table>
           </Form>
-        </div>
+        </React.Fragment>
       )
     }
 ;

@@ -1,9 +1,10 @@
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 function Home() {
   return (
-    <>
+    <React.Fragment>
       <div>
         <h1>
           BIENVENIDOS A SU 
@@ -30,7 +31,7 @@ function Home() {
           Submit
         </Button>
       </Form>
-    </>  
+      </React.Fragment> 
   );
 }
 

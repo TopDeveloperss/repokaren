@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 import Table from 'react-bootstrap/Table';
 
 
-const  VentasAdmin = () => 
+const  VentasAdmin = () =>  
     {
       const [datosProducto, setDatosProducto] = useState(datosVentasJson);  
       
