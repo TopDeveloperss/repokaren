@@ -37,7 +37,7 @@ const  Carrito = () =>
         <>
           <div className='row d-flex justify-content-around'>
               <div className='col-12 col-lg-5 mt-5'>
-                <h3>título compras online</h3>
+                <h3>Patriot</h3>
                 <p id="product_id">Producto </p>
 
                 <div className='rating-outer'>
@@ -47,9 +47,10 @@ const  Carrito = () =>
                 </div>
               </div>
               <div>
+                <img src="./imagenes/patriot.png"></img>
                 <p id="precio_producto">Valor</p>
                 <div className="stockCounter d-inline">
-                  <p id="precio_producto">Valor</p>
+                  <p id="precio_producto">$ 5000</p>
                   <input type="number" className="form-control count d-inline" value="{quantity}" readOnly/>
                 </div>
             
@@ -58,7 +59,7 @@ const  Carrito = () =>
                 </button>
                 
                 <h4 className="mt-2">Descripción:</h4>
-                <p>Descripción</p>
+                <p>Producto con gran experiencia en el mercado</p>
                 
                 <h5 className="mt-2">Stock:</h5>
                   <span className="btn btn-outline-warning minus" onClick="{decreaseQty}">-</span>
@@ -70,7 +71,7 @@ const  Carrito = () =>
 
           <div className='row d-flex justify-content-around'>
               <div className='col-12 col-lg-5 mt-5'>
-                <h3>título compras online</h3>
+                <h3>Asus</h3>
                 <p id="product_id">Producto </p>
 
                 <div className='rating-outer'>
@@ -80,9 +81,10 @@ const  Carrito = () =>
                 </div>
               </div>
               <div>
+                <img src="./imagenes/asus.png"></img>
                 <p id="precio_producto">Valor</p>
                 <div className="stockCounter d-inline">
-                  <p id="precio_producto">Valor</p>
+                  <p id="precio_producto">$ 15000</p>
                   <input type="number" className="form-control count d-inline" value="{quantity}" readOnly/>
                 </div>
             
@@ -91,7 +93,7 @@ const  Carrito = () =>
                 </button>
                 
                 <h4 className="mt-2">Descripción:</h4>
-                <p>Descripción</p>
+                <p>Producto con excelente desempeño</p>
                 
                 <h5 className="mt-2">Stock:</h5>
                 <span className="btn btn-outline-warning minus" onClick="{decreaseQty}">-</span>
@@ -103,7 +105,7 @@ const  Carrito = () =>
 
           <div className='row d-flex justify-content-around'>
               <div className='col-12 col-lg-5 mt-5'>
-                <h3>título compras online</h3>
+                <h3>AsRock</h3>
                 <p id="product_id">Producto </p>
 
                 <div className='rating-outer'>
@@ -113,9 +115,10 @@ const  Carrito = () =>
                 </div>
               </div>
               <div>
+                <img src="./imagenes/AsRock.png"></img>
                 <p id="precio_producto">Valor</p>
                 <div className="stockCounter d-inline">
-                  <p id="precio_producto">Valor</p>
+                  <p id="precio_producto">$ 495000</p>
                   <input type="number" className="form-control count d-inline" value="{quantity}" readOnly/>
                 </div>
             
@@ -124,7 +127,7 @@ const  Carrito = () =>
                 </button>
                 
                 <h4 className="mt-2">Descripción:</h4>
-                <p>Descripción</p>
+                <p>Excelente producto</p>
                 
                 <h5 className="mt-2">Stock:</h5>
                   <span className="btn btn-outline-warning minus" onClick="{decreaseQty}">-</span>

@@ -49,8 +49,8 @@ const ProductoCliente = () =>
                                         <td>{index}</td>
                                         <td>{producto.imagen}                        
                                             <InputGroup className="mb-3">
-                                                <InputGroup.Text id="basic-addon3">img</InputGroup.Text>
-                                                    <img href="./">
+                                                <InputGroup.Text id="basic-addon3"></InputGroup.Text>
+                                                    <img src='./imagenes/procesadorIntel10M.png'>
                                                     
                                                     </img>
                                             </InputGroup>
