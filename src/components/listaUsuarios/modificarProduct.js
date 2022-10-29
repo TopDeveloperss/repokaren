@@ -50,6 +50,7 @@ const  ModificarProducts = () =>
       }
 
       return (
+        <>
         <div>
           {
               productModificado ? <p>Producto Editado!! bravo</p> :
@@ -149,6 +150,7 @@ const  ModificarProducts = () =>
             }
         <Pagination/>
       </div>
+      </>
       
       )
     }
