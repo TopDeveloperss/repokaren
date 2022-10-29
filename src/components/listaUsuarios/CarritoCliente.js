@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import React, { useState } from 'react';
 import Table from 'react-bootstrap/Table';
+import Pagination from './Pagination.js';
 
 const  Carrito = () => 
   {
@@ -166,6 +167,7 @@ const  Carrito = () =>
             </div>
           </div>
         </div>
+        <Pagination/>
       </div>
     </> 
   )

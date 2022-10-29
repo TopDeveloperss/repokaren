@@ -45,9 +45,9 @@ function App() {
       <Nav.Item>
         <Nav.Link href="/clienteproducto">Cliente - Productos</Nav.Link>
       </Nav.Item>
-      <Nav.Item>
-        <Nav.Link href="/carrito">cliente - Carrito</Nav.Link>
-      </Nav.Item>
+      {/* <Nav.Item>
+        <Nav.Link href="/carrito">Cliente - Carrito</Nav.Link>
+      </Nav.Item> */}
       <Nav.Item>
         <Nav.Link href="/Carrito">Carro de compras</Nav.Link>
       </Nav.Item>
@@ -68,7 +68,7 @@ function App() {
           <Route path='/carrito' element={Autorizacion(Carrito, ["USER", "ADMIN"])}/>
 
         </Routes>
-          <Pagination/>
+         
           <Footer/>
       </BrowserRouter>
     </>

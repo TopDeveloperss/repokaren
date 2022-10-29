@@ -6,6 +6,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import React, { useState } from 'react';
 //import styles from './listaUsuarios.module.css';
 import Table from 'react-bootstrap/Table';
+import Pagination from './Pagination.js';
 
 
 const  VentasAdmin = () => 
@@ -79,6 +80,7 @@ const  VentasAdmin = () =>
                         </tbody>
                 </ Table>
             </Form>
+            <Pagination/>
         </div>
     )
     }

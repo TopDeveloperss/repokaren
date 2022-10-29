@@ -7,6 +7,8 @@ import React, { useState } from 'react';
 import Table from 'react-bootstrap/Table';
 
 
+
+
 const  ModificarProducts = () => 
     {
       const productoModificadoJson = JSON.parse(localStorage.getItem("productoModificado"))
@@ -130,7 +132,7 @@ const  ModificarProducts = () =>
                         </td>
                         <td>
                           <InputGroup className="mb-3">
-                            <InputGroup.Text id="basic-addon3"></InputGroup.Text>
+                            {/* <InputGroup.Text ></InputGroup.Text> */}
                               <img src='./imagenes/Hyper-fury.png'>
                               </img>
                           </InputGroup>
@@ -145,7 +147,9 @@ const  ModificarProducts = () =>
                 </ Table>
               </Form>
             }
-          </div>
+        <Pagination/>
+      </div>
+      
       )
     }
 ;

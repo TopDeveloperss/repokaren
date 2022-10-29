@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import logo from './logo.png'
 
 const Header = () => {
 
@@ -7,13 +8,13 @@ const Header = () => {
             <nav className='navbar row'>
                 <div className='col-12 col-md-3'>
                     <div className='navbar-brand'>
-                        <h1>Búsqueda </h1>
-                        <img src="./" alt="Compras online"></img>
+                        <img src={logo} alt="Compras online"></img>
                     </div>
                 </div>
 
                 <div className='col-12 col-md-6 mt-2 mt-md-0'>
                     <div className="input-group">
+                        <h4>Búsqueda</h4>
                         <input
                             type="text"
                             id="search_field"

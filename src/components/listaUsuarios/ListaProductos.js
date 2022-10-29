@@ -1,6 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel';
 import React, { useState } from 'react';
 
+import Pagination from './Pagination.js';
+
+
 const ListaProductos = () =>  {
     const datosProductoJson = JSON.parse(localStorage.getItem("productos"))
    
@@ -118,6 +121,8 @@ const ListaProductos = () =>  {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+        <Pagination/>
+
         </>
     );
 }
