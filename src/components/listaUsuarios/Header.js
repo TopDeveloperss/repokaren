@@ -15,12 +15,12 @@ const Header = () => {
 
                 <div className='col-12 col-md-6 mt-2 mt-md-0'>
                     <div className="input-group">
-                        <h4>Búsqueda</h4>
+                    
                         <input
                             type="text"
                             id="search_field"
                             class="form-control"
-                            placeholder='Que desea encontrar?'></input>
+                            placeholder='Buscar producto'></input>
                         <div class="input-group-append">
                             <i class="fa fa-search-plus fa-2x text-white" aria-hidden="true"></i>
                             <button class="btn btn-outline-success" type = "submit">
