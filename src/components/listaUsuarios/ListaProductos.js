@@ -107,11 +107,11 @@ const ListaProductos = () =>  {
                 <Carousel.Item interval={7000}>
                     <img
                     className="d-block w-100"
-                    src="./imagenes/Hyper-fury.png"
+                    src="./imagenes/Adata.png"
                     alt="Second slide"
                     />
                     <Carousel.Caption>
-                    <h3>Hyper-fury</h3>
+                    <h3>Adata</h3>
                     <p>tarjeta</p>
                     <p>Valor: $60000</p>
                     <p>Stock: 5</p>

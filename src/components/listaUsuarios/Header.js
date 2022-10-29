@@ -20,8 +20,9 @@ const Header = () => {
                             class="form-control"
                             placeholder='Que desea encontrar?'></input>
                         <div class="input-group-append">
-                            <button id="search-btn" class="btn">
-                                <i class="fa fa-search-plus fa-2x text-white" aria-hidden="true"></i>
+                            <i class="fa fa-search-plus fa-2x text-white" aria-hidden="true"></i>
+                            <button class="btn btn-outline-success" type = "submit">
+                                Buscar
                             </button>
                         </div>
                     </div>

@@ -35,110 +35,141 @@ const  Carrito = () =>
 
       return (
         <>
-          <div className='row d-flex justify-content-around'>
-              <div className='col-12 col-lg-5 mt-5'>
-                <h3>Patriot</h3>
-                <p id="product_id">Producto </p>
-
-                <div className='rating-outer'>
-                  <div className="rating-inner" >
-
+          <div id="carrito">
+            <div class="container-md p-1">
+              <div class="row pt-5">
+                <h3 class="text-center pb-5 pt-5 h1 text-shadow">Carrito de compras cliente</h3>
+              </div>
+              
+              <div id="carrito">
+            <div class="row">
+              <div class="col-sm"> 
+                  <div class="card w-100-card-border btn-outliner-primary mb-5" id="tarjetas">
+                    <div class="card-body">
+                      <h3>Patriot</h3>
+                      <p id="card-text">Producto </p>
+                      <div className='rating-outer'>
+                        <div className="rating-inner" >
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="./imagenes/patriot.png"></img>
+                      <p id="card-text">Valor</p>
+                      <div className="stockCounter d-inline"> 
+                      <p id="card-text">$ 5000</p>
+                      
+                    </div>
+                            
+                    <button type="button" id="carrito_btn" className="btn btn-outline-success d-inline ml-4" >
+                      Comprar
+                    </button>
+                                
+                    <h4 className="mt-2">Descripción:</h4>
+                    <p>Producto con gran experiencia en el mercado</p>
+                    <ul>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                                
+                    <h5 className="mt-2">Stock:</h5>
+                    <span className="btn btn-outline-warning minus" onClick="{decreaseQty}">-</span>
+                    <span className="btn btn-outline-primary plus" onClick="{increaseQty}">+</span>
+                                
+                    <p id="card-text">Vendido por: <strong></strong></p>
                   </div>
                 </div>
               </div>
-              <div>
-                <img src="./imagenes/patriot.png"></img>
-                <p id="precio_producto">Valor</p>
-                <div className="stockCounter d-inline">
-                  <p id="precio_producto">$ 5000</p>
-                  <input type="number" className="form-control count d-inline" value="{quantity}" readOnly/>
-                </div>
-            
-                <button type="button" id="carrito_btn" className="btn btn-outline-success d-inline ml-4" >
-                  Comprar
-                </button>
-                
-                <h4 className="mt-2">Descripción:</h4>
-                <p>Producto con gran experiencia en el mercado</p>
-                
-                <h5 className="mt-2">Stock:</h5>
-                  <span className="btn btn-outline-warning minus" onClick="{decreaseQty}">-</span>
-                  <span className="btn btn-outline-primary plus" onClick="{increaseQty}">+</span>
-                
-                <p id="vendedor">Vendido por: <strong></strong></p>
-              </div>
-          </div>
 
-          <div className='row d-flex justify-content-around'>
-              <div className='col-12 col-lg-5 mt-5'>
-                <h3>Asus</h3>
-                <p id="product_id">Producto </p>
+              <div class="col-sm"> 
+                  <div class="card w-100-card-border btn-outliner-primary mb-5" id="tarjetas">
+                    <div class="card-body">
+                      <h3>Asus</h3>
+                      <p id="card-text">Producto </p>
+                      <div className='rating-outer'>
+                        <div className="rating-inner" >
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="./imagenes/Adata.png"></img>
+                      <p id="card-text">Valor</p>
+                      <div className="stockCounter d-inline">
+                      <p id="card-text">$ 5000</p>
+                      
+                    </div>
+                            
+                    <button type="button" id="carrito_btn" className="btn btn-outline-success d-inline ml-4" >
+                      Comprar
+                    </button>
+                                
+                    <h4 className="mt-2">Descripción:</h4>
+                    <p>Producto con gran experiencia en el mercado</p>
+                    <ul>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
 
-                <div className='rating-outer'>
-                  <div className="rating-inner" >
-
+                                
+                    <h5 className="mt-2">Stock:</h5>
+                    <span className="btn btn-outline-warning minus" onClick="{decreaseQty}">-</span>
+                    <span className="btn btn-outline-primary plus" onClick="{increaseQty}">+</span>
+                                
+                    <p id="vendedor">Vendido por: <strong></strong></p>
                   </div>
                 </div>
               </div>
-              <div>
-                <img src="./imagenes/asus.png"></img>
-                <p id="precio_producto">Valor</p>
-                <div className="stockCounter d-inline">
-                  <p id="precio_producto">$ 15000</p>
-                  <input type="number" className="form-control count d-inline" value="{quantity}" readOnly/>
-                </div>
-            
-                <button type="button" id="carrito_btn" className="btn btn-outline-success d-inline ml-4" >
-                  Comprar
-                </button>
-                
-                <h4 className="mt-2">Descripción:</h4>
-                <p>Producto con excelente desempeño</p>
-                
-                <h5 className="mt-2">Stock:</h5>
-                <span className="btn btn-outline-warning minus" onClick="{decreaseQty}">-</span>
-                  <span className="btn btn-outline-primary plus" onClick="{increaseQty}">+</span>
-                
-                <p id="vendedor">Vendido por: <strong></strong></p>
-              </div>
-          </div>
 
-          <div className='row d-flex justify-content-around'>
-              <div className='col-12 col-lg-5 mt-5'>
-                <h3>AsRock</h3>
-                <p id="product_id">Producto </p>
-
-                <div className='rating-outer'>
-                  <div className="rating-inner" >
-
+              <div class="col-sm"> 
+                  <div class="card w-100-card-border btn-outliner-primary mb-5" id="tarjetas">
+                    <div class="card-body">
+                      <h3>Hyper - Fury</h3>
+                      <p id="card-text">Producto </p>
+                      <div className='rating-outer'>
+                        <div className="rating-inner" >
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="./imagenes/Hyper-fury.png"></img>
+                      <p id="card-text">Valor</p>
+                      <div className="stockCounter d-inline">
+                      <p id="card-text">$ 5000</p>
+                      
+                    </div>
+                            
+                    <button type="button" id="carrito_btn" className="btn btn-outline-success d-inline ml-4" >
+                      Comprar
+                    </button>
+                                
+                    <h4 className="mt-2">Descripción:</h4>
+                    <p>Producto con gran experiencia en el mercado</p>
+                    <ul>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                                
+                    <h5 className="mt-2">Stock:</h5>
+                    <span className="btn btn-outline-warning minus" onClick="{decreaseQty}">-</span>
+                    <span className="btn btn-outline-primary plus" onClick="{increaseQty}">+</span>
+                                
+                    <p id="card-text">Vendido por: </p>
                   </div>
                 </div>
-              </div>
-              <div>
-                <img src="./imagenes/AsRock.png"></img>
-                <p id="precio_producto">Valor</p>
-                <div className="stockCounter d-inline">
-                  <p id="precio_producto">$ 495000</p>
-                  <input type="number" className="form-control count d-inline" value="{quantity}" readOnly/>
-                </div>
-            
-                <button type="button" id="carrito_btn" className="btn btn-outline-success d-inline ml-4" >
-                  Comprar
-                </button>
-                
-                <h4 className="mt-2">Descripción:</h4>
-                <p>Excelente producto</p>
-                
-                <h5 className="mt-2">Stock:</h5>
-                  <span className="btn btn-outline-warning minus" onClick="{decreaseQty}">-</span>
-                  <span className="btn btn-outline-primary plus" onClick="{increaseQty}">+</span>
-                
-                <p id="vendedor">Vendido por: <strong></strong></p>
-              </div>
+              </div>            
+            </div>
           </div>
-        </> 
-      )
-    }
+        </div>
+      </div>
+    </> 
+  )
+  }
   ;
 export default Carrito;
 
