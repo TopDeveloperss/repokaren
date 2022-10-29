@@ -51,13 +51,13 @@ function App() {
         <Nav.Link eventKey="listaP" as={Link} to="/listaP"><CardList />   Lista de Productos</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="clienteproducto" as={Link} to="/clienteproducto"><CardList />   Cliente - Productos</Nav.Link>
+        <Nav.Link eventKey="carrito" as={Link} to="/Carrito"><CardList />   Cliente - Productos</Nav.Link>
       </Nav.Item>
       {/* <Nav.Item>
         <Nav.Link eventKey="carrito" as={Link} to="/carrito">Cliente - Carrito</Nav.Link>
       </Nav.Item> */}
       <Nav.Item>
-        <Nav.Link eventKey="carrito" as={Link} to="/Carrito"><Basket />   Carro de compras</Nav.Link>
+        <Nav.Link eventKey="clienteproducto" as={Link} to="/clienteproducto"><Basket />   Carro de compras</Nav.Link>
       </Nav.Item>
       <Nav.Item>
       <Nav.Link eventKey="disabled" disabled><Key />   Roles</Nav.Link>
