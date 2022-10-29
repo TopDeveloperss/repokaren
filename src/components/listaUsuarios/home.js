@@ -6,8 +6,9 @@ function Home() {
     <>
             <div>
         <h1>
-        CompuMark't
+        Bienvenido a CompuMark't
         </h1>
+        <br></br>
       </div>
       <Form>
         
