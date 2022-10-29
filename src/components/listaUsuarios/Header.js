@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
-import logo from './logo.png'
+import logo from './logo.png';
+import './Pagination.css';
 
 const Header = () => {
 
@@ -8,7 +9,7 @@ const Header = () => {
             <nav className='navbar row'>
                 <div className='col-12 col-md-3'>
                     <div className='navbar-brand'>
-                        <img src={logo} alt="Compras online"></img>
+                        <img src={logo} ClassName="Imagen" alt="Compras online"></img>
                     </div>
                 </div>
 

@@ -7,3 +7,10 @@
     align-items: center;
     position: absolute;
 }
+
+.Imagen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
