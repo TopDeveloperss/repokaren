@@ -142,7 +142,26 @@ const  ModificarProducts = () =>
                       </td>
                   </tr>
                   
-                  
+                  {
+                    datosProducto.map(
+                      (producto, index) => { 
+                        return(
+                          <tr>
+                            <td>{index}</td>
+                            <td>{producto.nombre}</td>
+                            <td>{producto.descripcion}</td>
+                            <td>{producto.precio}</td>
+                            <td>{producto.stock}</td>   
+                            <td><Button variant="outline-warning" onClick= { 
+                              ()  =>  {
+                                eliminarProducto(producto.id)
+                              }
+                              } >Modificar</Button></td>    
+                          </tr>
+                        );
+                      }
+                    )
+                  }
                   
                 </tbody>
                 
